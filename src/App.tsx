@@ -1,24 +1,28 @@
+import { Box, Img, Text } from '@chakra-ui/react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import './App.scss';
+import Header from './Components/Header/Header';
+import shafeeque from './Asset/Images/sh.png'
+import { isMobile } from 'react-device-detect';
+import Skillset from './Components/Skillset/Skillset';
+import PortFolio from './Components/Portfolio/PortFolio';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Box   className={isMobile?"face_section_mobile":'face_section'}>
+        <Img src={shafeeque}/>
+        {/* className={isMobile?'face-Text_box_mobile':'face-Text_box' */}
+        <Box className='face-Text_box'>
+          <Text  fontSize={isMobile?'17px':'55px'}   >MUHAMMED SHAFEEQUE P</Text>
+          <Text fontSize={isMobile?'10px':'40px'} >MERN Stack Devoloper</Text>
+        </Box>
+
+
+      </Box>
+      <Skillset/>
+      <PortFolio/>  
     </div>
   );
 }

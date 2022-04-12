@@ -1,0 +1,25 @@
+.skillsetBoxes{
+    width: 100%;
+    background-color: white;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    .skill-logo{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 20px;
+
+    }
+    .skill-Logo-Mobile{
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+       
+    }
+    
+   
+}

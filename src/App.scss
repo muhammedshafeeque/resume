@@ -1,0 +1,46 @@
+.App{
+    width: 100%;
+}
+.face_section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Asset/Images/progra.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    Img{
+        width: 35wh;
+        height: 100vh;
+    }
+    .face-Text_box{
+        padding-top: 40vh;
+        width: 64vw;
+        height: 100vh;
+        color:honeydew;
+        font-weight: bolder;
+        font-family:'Times New Roman', Times, serif;
+        text-shadow: 2px 2px #02010c;
+        
+    }
+}
+.face_section_mobile{
+    width: 100vw;
+    height: 26vh;
+    background-image: url('./Asset/Images/progra.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    Img{
+        width: 30wh;
+        height: 26vh;
+    }
+    .face-Text_box{
+       padding-top: 9vh;
+        height: 100vh;
+        color:honeydew;
+        font-weight: bolder;
+        font-family:'Times New Roman', Times, serif;
+        text-shadow: 1px 1px #02010c;
+        
+    }
+}

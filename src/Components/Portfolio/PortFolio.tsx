@@ -9,6 +9,7 @@ import OLX from '../../Asset/Project/olx.png'
 import ProjectModal from '../Model/ProjectModal';
 import quiz from '../../Asset/Project/onlinequiz.png'
 import blood from '../../Asset/Project/blood.png'
+import { isMobile } from 'react-device-detect'
 function PortFolio() {
   let projects = [
     {
@@ -136,17 +137,17 @@ function PortFolio() {
     <Box className='portfolio'>
       <Text className='project-text'>Projects</Text>
       
-      <Box className='portfolio-main'>
+      <Box  className='portfolio-main'>
         {projects.map((project) => {
 
-          return <div key={project.name} >
+          return <Box ml={isMobile?'7%':'0'}  key={project.name} >
             <ProjectModal data={project} >
             <Box className="project">
               <Img className='project-Image' src={project.image} />
               <Text fontWeight={'bold'}>{project.name}</Text>
             </Box>
           </ProjectModal>
-          </div>
+          </Box>
 
         })}
 

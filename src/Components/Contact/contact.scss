@@ -1,0 +1,40 @@
+@import '../../Asset/Styles/Colors.scss';
+.Contact{
+   
+    background-color: $back-ground;
+    padding:10px;
+    &-main{
+        background-color: white;
+        border-radius: 5px;
+        &-heading{
+            text-align: center;
+            font-size: 30px;
+            font-weight:bold;
+        }
+        .Contact-body{
+            width: 100%;
+            display: flex;
+            margin-top: 30px;
+            .social-part{
+                
+                background-color: blue;
+                min-height: 60px;
+                
+                padding: 10px;
+                color: white;
+                .social-row{
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+            .message-part{
+                
+               
+            }
+        }
+    }
+   
+}

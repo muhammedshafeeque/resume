@@ -7,6 +7,7 @@ import shafeeque from './Asset/Images/sh.png'
 import { isMobile } from 'react-device-detect';
 import Skillset from './Components/Skillset/Skillset';
 import PortFolio from './Components/Portfolio/PortFolio';
+import Contact from './Components/Contact/Contact';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
       </Box>
       <Skillset/>
       <PortFolio/>  
+      <Contact/>
     </div>
   );
 }

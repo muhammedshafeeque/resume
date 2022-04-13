@@ -15,25 +15,22 @@
             width: 100%;
             display: flex;
             margin-top: 30px;
+            padding-bottom: 20px;
             .social-part{
-                
-                background-color: blue;
+                max-width: 35%;
+                background-color: rgb(2, 2, 88);
                 min-height: 60px;
-                
                 padding: 10px;
                 color: white;
                 .social-row{
                     margin-bottom: 20px;
                     display: flex;
                     align-items: center;
-                    font-weight: bold;
+                   cursor: pointer;
                     font-size: 20px;
                 }
             }
-            .message-part{
-                
-               
-            }
+           
         }
     }
    

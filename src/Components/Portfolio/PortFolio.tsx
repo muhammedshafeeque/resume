@@ -8,6 +8,7 @@ import ReizenHub from '../../Asset/Project/ReizenHub.png'
 import OLX from '../../Asset/Project/olx.png'
 import ProjectModal from '../Model/ProjectModal';
 import quiz from '../../Asset/Project/onlinequiz.png'
+import blood from '../../Asset/Project/blood.png'
 function PortFolio() {
   let projects = [
     {
@@ -109,11 +110,32 @@ function PortFolio() {
         "mongo db",
         "Express handlebars"
       ],
+    },
+    {
+      name: "SKSSF AMAPPOYIL BLOOD",
+      description: "This is devoloped for SKSSF AMAPPOYIL UNIT for blood donation  ",
+      LiveLink: "https://skssfamappoyil.herokuapp.com/ ",
+      githublink:'https://github.com/muhammedshafeeque/skssfamappoyil.git',
+      image:blood,
+      fetures: [
+        
+        "Search blood with blood group",
+        "Donate Blood",
+       
+        
+      ],
+      technologi: [
+        'Node js ',
+        "mongo db",
+        "Express handlebars"
+      ],
     }
+
   ];
   return (
     <Box className='portfolio'>
       <Text className='project-text'>Projects</Text>
+      
       <Box className='portfolio-main'>
         {projects.map((project) => {
 

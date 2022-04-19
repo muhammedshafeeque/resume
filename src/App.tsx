@@ -17,7 +17,7 @@ function App() {
         {/* className={isMobile?'face-Text_box_mobile':'face-Text_box' */}
         <Box className='face-Text_box'>
           <Text fontSize={isMobile ? '17px' : '55px'}   >MUHAMMED SHAFEEQUE P</Text>
-          <Text fontSize={isMobile ? '10px' : '40px'} >MERN Stack Devoloper</Text>
+          <Text fontSize={isMobile ? '10px' : '40px'} >MERN Stack Developer</Text>
         </Box>
       </Box>
       <Skillset />

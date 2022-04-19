@@ -27,7 +27,7 @@ const  ProjectModal : React.FC<Iproject>=({children,data})=> {
           <ModalCloseButton />
           <ModalBody>
             <p>{data.description}</p><br/>
-            <Text fontWeight={'bold'} >Fetures:</Text>
+            <Text fontWeight={'bold'} >Features:</Text>
             <Box className='modalfeture' >
             {data.fetures&&data.fetures.map((fet:any)=>{
               return <p key={fet}>{fet} , </p>

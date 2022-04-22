@@ -10,6 +10,8 @@ import ProjectModal from '../Model/ProjectModal';
 import quiz from '../../Asset/Project/onlinequiz.png'
 import blood from '../../Asset/Project/blood.png'
 import { isMobile } from 'react-device-detect'
+import soppingcart from '../../Asset/Project/shopping.png'
+import pmhchitty from '../../Asset/Project/pmhChitty.png'
 function PortFolio() {
   let projects = [
     {
@@ -129,6 +131,63 @@ function PortFolio() {
         'Node js ',
         "mongo db",
         "Express handlebars"
+      ],
+    },
+    {
+      name: "CRAPEE STORE",
+      description: "Crapee store is a chatting application made by node.js , Express js, mongo db , Handle bars",
+      LiveLink: "",
+      githublink:'https://github.com/muhammedshafeeque/shopingcart.git',
+      image:soppingcart,
+      fetures: [
+        "Login System",
+        "Admin Controle",
+        "Add Product",
+        "Delete Product",
+        "Edit Product",
+        "add items to the cart ",
+        "remove from cart",
+        "edit product count in cart",
+        "place order ",
+        "List Oders",
+        "online Payment ",
+        "cash on Delivery"
+      ],
+      technologi: [
+        'Node js ',
+        "mongo db",
+        "Express js",
+        "Express handlebars",
+        "razor Pay ",
+        "Ajax"
+      ],
+    }
+    ,
+    {
+      name: "PMH CHITTY ",
+      description: "PMH CHITTY is a chitty management application made by node.js , Express js, mongo db , Handle bars",
+      LiveLink: "",
+      githublink:'https://github.com/muhammedshafeeque/pmh-chitty.git',
+      image:pmhchitty,
+      fetures: [
+        "Login System",
+        "Admin Controle",
+        "Add Member",
+        "Create Groupe",
+        "Edit Admin",
+        "add members to groupe",
+        "Make Chitty",
+        "Payement register",
+        "View Member Profile",
+        "etc"
+       
+      ],
+      technologi: [
+        'Node js ',
+        "mongo db",
+        "Express js",
+        "Express handlebars",
+        "Ajax"
       ],
     }
 

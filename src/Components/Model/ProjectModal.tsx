@@ -7,11 +7,11 @@ interface Iproject{
   children:any
   data:{
     name:string,
-      description:string,
-      LiveLink:any,
-      fetures:any,
-      technologi:any,
-      githublink:any
+    description:string,
+    LiveLink:any,
+    fetures:any,
+    technologi:any,
+    githublink:any
        
   }
 }

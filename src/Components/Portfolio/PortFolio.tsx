@@ -12,21 +12,45 @@ import blood from '../../Asset/Project/blood.png'
 import { isMobile } from 'react-device-detect'
 import soppingcart from '../../Asset/Project/shopping.png'
 import pmhchitty from '../../Asset/Project/pmhChitty.png'
+import taskmanage from '../../Asset/Project/task.png'
 function PortFolio() {
-  let projects = [
+  let projects = [ 
+    {
+      name: "Task Manager",
+      description: "Crapee Task management application using MERN stack ",
+      LiveLink: "https://gippme.online",
+      githublink: 'https://github.com/muhammedshafeeque/crapee-talks.git',
+      image:taskmanage,
+      fetures: [
+        "login system",
+        "logout from all divice in single click",
+        "createte task",
+        "finish task",
+        "delete task",
+       
+      ],
+      technologi: [
+        "Node js",
+        "Express Js",
+        " MongoDb",
+        "React js",
+        "Chakra ui",
+        "jwt",
+      ],
+    },
     {
       name: "crapee-talk",
       description: "Crapee Talk is real time chatitng application using MERN stack ",
       LiveLink: "https://gippme.online",
-      githublink:'https://github.com/muhammedshafeeque/crapee-talks.git',
+      githublink: 'https://github.com/muhammedshafeeque/Task-Manager.git',
       image: crapeetalk,
       fetures: [
-        "login system" ,
-"search user ",
-"create group" ,
-"real time chat" ,
-"group admin control" ,
-"edit Profile" ,
+        "login system",
+        "search user ",
+        "create group",
+        "real time chat",
+        "group admin control",
+        "edit Profile",
       ],
       technologi: [
         "Node js",
@@ -47,24 +71,24 @@ function PortFolio() {
       githublink: "",
       image: ReizenHub,
       fetures: [
-        "login system for costumer" , "Agency" ,
-"admin panel" ,
-"search packages" ,
-"select packages" ,
-"add package ",
-"edit package" ,
-"manage package" ,
-"rating for package", "agency" ,
-"search order boosting" ,
-"add charted flight" ,
-"flight searching ",
-"scheduling trip" ,
-"control agency" ,
-"suspend packages" ,
-"suspend Agency ",
-"terminate agency" ,
-"email notification" ,
-"sms notification" ,
+        "login system for costumer", "Agency",
+        "admin panel",
+        "search packages",
+        "select packages",
+        "add package ",
+        "edit package",
+        "manage package",
+        "rating for package", "agency",
+        "search order boosting",
+        "add charted flight",
+        "flight searching ",
+        "scheduling trip",
+        "control agency",
+        "suspend packages",
+        "suspend Agency ",
+        "terminate agency",
+        "email notification",
+        "sms notification",
       ],
       technologi: [
         "Node js",
@@ -80,8 +104,8 @@ function PortFolio() {
       name: "OLX clone ",
       description: " OlX clone application using react js and firebase",
       LiveLink: "https://snazzy-rugelach-270749.netlify.app",
-      githublink:'https://github.com/muhammedshafeeque/olx_clone.git',
-      image:OLX,
+      githublink: 'https://github.com/muhammedshafeeque/olx_clone.git',
+      image: OLX,
       fetures: [
         "login system",
         "search",
@@ -89,24 +113,23 @@ function PortFolio() {
         'View Product '
       ],
       technologi: [
-  
+
         "React js",
         'Firebase'
       ],
-    }
-    ,
+    },
     {
       name: "Quiz Result Publication",
       description: "this Project is developed for an online quiz that contected by our youth club. it will display individual Marks using player mobile Numbers ",
       LiveLink: "https://vfcresult.herokuapp.com/ ",
-      githublink:'https://github.com/muhammedshafeeque/quiz_result.git',
-      image:quiz,
+      githublink: 'https://github.com/muhammedshafeeque/quiz_result.git',
+      image: quiz,
       fetures: [
-        
+
         "search with mobile",
         "mark View",
         "Quiz View"
-        
+
       ],
       technologi: [
         'Node js ',
@@ -118,14 +141,14 @@ function PortFolio() {
       name: "SKSSF AMAPPOYIL BLOOD",
       description: "This is developed for SKSSF AMAPPOYIL UNIT for blood donation  ",
       LiveLink: "https://skssfamappoyil.herokuapp.com/ ",
-      githublink:'https://github.com/muhammedshafeeque/skssfamappoyil.git',
-      image:blood,
+      githublink: 'https://github.com/muhammedshafeeque/skssfamappoyil.git',
+      image: blood,
       fetures: [
-        
+
         "Search blood with blood group",
         "Donate Blood",
-       
-        
+
+
       ],
       technologi: [
         'Node js ',
@@ -137,8 +160,8 @@ function PortFolio() {
       name: "CRAPEE STORE",
       description: "Crapee store is a chatting application made by node.js , Express js, mongo db , Handle bars",
       LiveLink: "",
-      githublink:'https://github.com/muhammedshafeeque/shopingcart.git',
-      image:soppingcart,
+      githublink: 'https://github.com/muhammedshafeeque/shopingcart.git',
+      image: soppingcart,
       fetures: [
         "Login System",
         "Admin Controle",
@@ -167,8 +190,8 @@ function PortFolio() {
       name: "PMH CHITTY ",
       description: "PMH CHITTY is a chitty management application made by node.js , Express js, mongo db , Handle bars",
       LiveLink: "",
-      githublink:'https://github.com/muhammedshafeeque/pmh-chitty.git',
-      image:pmhchitty,
+      githublink: 'https://github.com/muhammedshafeeque/pmh-chitty.git',
+      image: pmhchitty,
       fetures: [
         "Login System",
         "Admin Controle",
@@ -180,7 +203,7 @@ function PortFolio() {
         "Payement register",
         "View Member Profile",
         "etc"
-       
+
       ],
       technologi: [
         'Node js ',
@@ -195,17 +218,17 @@ function PortFolio() {
   return (
     <Box className='portfolio'>
       <Text className='project-text'>Projects</Text>
-      
-      <Box  className='portfolio-main'>
+
+      <Box className='portfolio-main'>
         {projects.map((project) => {
 
-          return <Box ml={isMobile?'7%':'0'}  key={project.name} >
+          return <Box ml={isMobile ? '7%' : '0'} key={project.name} >
             <ProjectModal data={project} >
-            <Box className="project">
-              <Img className='project-Image' src={project.image} />
-              <Text fontWeight={'bold'}>{project.name}</Text>
-            </Box>
-          </ProjectModal>
+              <Box className="project">
+                <Img className='project-Image' src={project.image} />
+                <Text fontWeight={'bold'}>{project.name}</Text>
+              </Box>
+            </ProjectModal>
           </Box>
 
         })}

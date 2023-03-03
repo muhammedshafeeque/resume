@@ -16,8 +16,8 @@ function App() {
         <Img src={shafeeque} />
         {/* className={isMobile?'face-Text_box_mobile':'face-Text_box' */}
         <Box className='face-Text_box'>
-          <Text fontSize={isMobile ? '17px' : '55px'}   >MUHAMMED SHAFEEQUE P</Text>
-          <Text fontSize={isMobile ? '10px' : '40px'} >MERN Stack Developer</Text>
+          <Text fontSize={isMobile ? '.9rem' : '4rem'}   >MUHAMMED SHAFEEQUE P</Text>
+          <Text fontSize={isMobile ? '.5rem' : '3rem'} >MERN Stack Developer</Text>
         </Box>
       </Box>
       <Skillset />
